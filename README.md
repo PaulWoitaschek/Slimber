@@ -13,20 +13,17 @@ has one big advantage: The whole block will only be executed when you are in deb
 And this is where Slimber comes into play: It uses [Kotlin](https://kotlinlang.org/)s `inline` capabilities so we can archieve the **no-cost-effect**.
 
 # How to use
-There library does not have any classes and is just made of package level functions.
-For convenience they are called `i` for `Timber.i`, `d` for `Timber.d`, etc.
-
-You just replace each call like `Timber.e(throwable, "Logmessage")` with a function call: `e(throwable, {"Logmessage"})`.
+You just replace each call like `Timber.e(throwable, "Logmessage")` with a function call: `Slimber.e(throwable, {"Logmessage"})`.
 
 Remember: In Kotlin you specify the last function in an arugment of a function outside the parentheses. So you can do it like this:
 ```kotlin
 val ob = "String"
 val number = 5
-e (throwable) {
+Slimber.e (throwable) {
     "There was a serious issue with $ob at $number"
 }
 // or just
-d { "onCreate called" }
+Slimber.d { "onCreate called" }
 ```
 
 # Installation
@@ -42,6 +39,6 @@ allprojects {
 And then this dependency to your project:
 ```gradle
 dependencies {
-    compile 'com.github.PaulWoitaschek:Slimber:1.0'
+    compile 'com.github.PaulWoitaschek:Slimber:1.0.1'
 }
 ```
