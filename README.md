@@ -36,7 +36,7 @@ allprojects {
     repositories {
         ...
         maven { url "https://jitpack.io" }
-		}
+    }
 }
 ```
 And then this dependency to your project:
