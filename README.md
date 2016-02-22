@@ -1,5 +1,5 @@
 # Slimber
-*Like [Timber](https://github.com/JakeWharton/timber), only slim. Uses Kotlin to extend Timber.*
+*Like [Timber](https://github.com/JakeWharton/timber), only slim.* Reduces the costs of Timber to basically *zero.*
 
 Timber is a great library that makes logging very easy. However traditional logging like
 ```java
