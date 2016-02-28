@@ -15,4 +15,4 @@
 #-keepclassmembers class fqcn.of.javascript.interface.for.webview {
 #   public *;
 #}
--keep class de.paul_woitaschek.slimber.Slimber
+-dontwarn de.paul_woitaschek.slimber.Slimber
