@@ -3,12 +3,12 @@ apply plugin: 'kotlin-android'
 apply from: '../maven-push.gradle'
 
 android {
-    compileSdkVersion 23
-    buildToolsVersion "23.0.2"
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
 
     defaultConfig {
         minSdkVersion 15
-        targetSdkVersion 23
+        targetSdkVersion 25
         versionCode 5
         versionName "1.0.4"
         consumerProguardFiles 'proguard-rules.pro'
@@ -19,9 +19,14 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    sourceSets {
+        main.java.srcDirs += 'src/main/kotlin'
+    }
 }
 
 dependencies {
+    compile 'com.jakewharton.timber:timber:4.5.0'
+    compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlinVersion"
+
     testCompile 'junit:junit:4.12'
-    compile 'com.jakewharton.timber:timber:4.1.1'
 }
