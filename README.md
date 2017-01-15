@@ -10,9 +10,9 @@ if (BuildConfig.DEBUG) {
 ```
 has one big advantage: The whole block will only be executed when you are in debug mode. If you pass anything to Timber, the String itself and the precalculations will be created. Even if you never planted a tree.
 
-And this is where Slimber comes into play: It uses [Kotlin](https://kotlinlang.org/)s `inline` capabilities so we can archieve the **no-cost-effect** because the whole block is executed only when there are trees planted. And remember: In Kotlin you specify the last function in an arugment of a function outside the parentheses. So you can do it like this:
+And this is where Slimber comes into play: It uses [Kotlin](https://kotlinlang.org/)s `inline` capabilities so we can archieve the **no-cost-effect** because the whole block is executed only when there are trees planted. And remember: In Kotlin you can specify the last function in an arugment of a function outside the parentheses.
 
-So your code just looks like
+ So you can do it like this:
 ```kotlin
 d { "onCreate called with $expensiveToStringObject" }
 ```
