@@ -1,4 +1,5 @@
 @file:Suppress("unused")
+@file:JvmName("Slimber")
 
 import timber.log.Timber
 
