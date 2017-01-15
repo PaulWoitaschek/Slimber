@@ -27,6 +27,4 @@ android {
 dependencies {
     compile 'com.jakewharton.timber:timber:4.5.0'
     compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlinVersion"
-
-    testCompile 'junit:junit:4.12'
 }
