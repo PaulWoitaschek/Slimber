@@ -17,13 +17,9 @@ So your code just looks like
 d { "onCreate called with $expensiveToStringObject" }
 ```
 There are also functions that take a throwable as the first paramter, so you can use them like
-
 ```kotlin
 e(throwable) { "there was a severe error" }
-
-# How to use
-You just replace each call like `Timber.e(throwable, "Logmessage")` with a function call: `e(throwable, {"Logmessage"})`.
-
+```
 
 # Installation
 Add this to your root `build.gradle`
