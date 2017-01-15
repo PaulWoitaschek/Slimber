@@ -38,6 +38,6 @@ allprojects {
 And then this dependency to your project:
 ```gradle
 dependencies {
-    compile 'com.github.PaulWoitaschek:Slimber:1.0.4'
+    compile 'com.github.PaulWoitaschek:Slimber:1.0.5'
 }
 ```
