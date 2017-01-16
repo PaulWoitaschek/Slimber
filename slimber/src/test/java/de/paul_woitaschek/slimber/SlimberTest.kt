@@ -64,22 +64,28 @@ class SlimberTest {
   @Test fun testBlockNotExecuted() {
     val logThrowable = RuntimeException()
 
-    i { throw AssertionError() }
-    i(logThrowable) { throw AssertionError() }
+    val throwAssertionError = { throw AssertionError() }
 
-    d { throw AssertionError() }
-    d(logThrowable) { throw AssertionError() }
+    i(throwAssertionError)
+    i(logThrowable, throwAssertionError)
 
-    w { throw AssertionError() }
-    w(logThrowable) { throw AssertionError() }
+    d(throwAssertionError)
+    d(logThrowable, throwAssertionError)
 
-    e { throw AssertionError() }
-    e(logThrowable) { throw AssertionError() }
+    w(throwAssertionError)
+    w(logThrowable, throwAssertionError)
 
-    v { throw AssertionError() }
-    v(logThrowable) { throw AssertionError() }
+    e(throwAssertionError)
+    e(logThrowable, throwAssertionError)
 
-    wtf { throw AssertionError() }
-    wtf(logThrowable) { throw AssertionError() }
+    v(throwAssertionError)
+    v(logThrowable, throwAssertionError)
+
+    wtf(throwAssertionError)
+    wtf(logThrowable, throwAssertionError)
+  }
+
+  @Test fun failingTest() {
+    throw AssertionError("")
   }
 }
