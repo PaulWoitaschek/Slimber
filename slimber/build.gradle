@@ -27,4 +27,7 @@ android {
 dependencies {
     compile 'com.jakewharton.timber:timber:4.5.0'
     compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlinVersion"
+
+    testCompile "org.assertj:assertj-core:1.7.1"
+    testCompile "junit:junit:4.12"
 }
