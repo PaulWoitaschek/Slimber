@@ -84,8 +84,4 @@ class SlimberTest {
     wtf(throwAssertionError)
     wtf(logThrowable, throwAssertionError)
   }
-
-  @Test fun failingTest() {
-    throw AssertionError("")
-  }
 }
