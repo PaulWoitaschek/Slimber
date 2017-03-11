@@ -1,5 +1,5 @@
-# Slimber - Android Logging with Kotlin  ![Travis Badge](https://img.shields.io/travis/PaulWoitaschek/Slimber.svg)
-*Like [Timber](https://github.com/JakeWharton/timber), only slim.* Reduces the costs of Timber to basically *zero.*
+# Slimber - Android Logging with Kotlin  
+[![CI Status](https://circleci.com/gh/PaulWoitaschek/Slimber.svg?&style=shield&circle-token=1f53aecb74520d158b6586d177647e6400981dc1)](https://circleci.com/gh/PaulWoitaschek/Slimber)
 
 Timber is a great library that makes logging very easy. However traditional logging like
 ```java
