@@ -2,11 +2,7 @@ package de.paul_woitaschek.slimber
 
 import android.util.Log
 
-/**
- * An item that was logged
- *
- * @author Paul Woitaschek
- */
+
 data class LogItem(val priority: Int, val tag: String?, val message: String, val t: Throwable?) {
   companion object {
     fun d(tag: String? = null, message: String = "", t: Throwable? = null) = LogItem(Log.DEBUG, tag, message, t)

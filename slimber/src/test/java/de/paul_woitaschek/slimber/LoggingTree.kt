@@ -3,11 +3,6 @@ package de.paul_woitaschek.slimber
 import timber.log.Timber
 import java.util.ArrayList
 
-/**
- * A tree that stores messages as log items
- *
- * @author Paul Woitaschek
- */
 class LoggingTree : Timber.DebugTree() {
 
   private val logItems = ArrayList<LogItem>()

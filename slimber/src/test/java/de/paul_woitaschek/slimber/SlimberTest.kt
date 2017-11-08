@@ -14,23 +14,18 @@ import w
 import wtf
 
 
-/**
- * JUnit tests for Slimber
- *
- * @author Paul Woitaschek
- */
 class SlimberTest {
 
   @Before
   @After
-  fun setUpAndTearDown() {
+  fun uproot() {
     // clear timber after each test
     Timber.uprootAll()
   }
 
   /** Tests that the log messages arrive */
   @Test
-  fun testLogs() {
+  fun logs() {
     val loggingTree = LoggingTree()
     Timber.plant(loggingTree)
 
@@ -65,7 +60,7 @@ class SlimberTest {
 
   /** test that the blocks are not executed when there are no trees planted */
   @Test
-  fun testBlockNotExecuted() {
+  fun blockNotExecuted() {
     val logThrowable = RuntimeException()
 
     val throwAssertionError = { throw AssertionError() }
