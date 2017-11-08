@@ -25,9 +25,9 @@ android {
 }
 
 dependencies {
-    compile 'com.jakewharton.timber:timber:4.6.0'
-    compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlinVersion"
+    api 'com.jakewharton.timber:timber:4.6.0'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlinVersion"
 
-    testCompile "com.google.truth:truth:0.36"
-    testCompile "junit:junit:4.12"
+    testImplementation "com.google.truth:truth:0.36"
+    testImplementation "junit:junit:4.12"
 }
