@@ -3,12 +3,12 @@ apply plugin: 'kotlin-android'
 apply from: '../maven-push.gradle'
 
 android {
-    compileSdkVersion 25
-    buildToolsVersion "25.0.2"
+    compileSdkVersion 26
+    buildToolsVersion "26.0.3"
 
     defaultConfig {
         minSdkVersion 15
-        targetSdkVersion 25
+        targetSdkVersion 26
         versionCode 7
         versionName "1.0.6"
         consumerProguardFiles 'proguard-rules.pro'
@@ -25,7 +25,7 @@ android {
 }
 
 dependencies {
-    compile 'com.jakewharton.timber:timber:4.5.1'
+    compile 'com.jakewharton.timber:timber:4.6.0'
     compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlinVersion"
 
     testCompile "org.assertj:assertj-core:1.7.1"
