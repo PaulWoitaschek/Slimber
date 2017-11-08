@@ -1,7 +1,7 @@
 package de.paul_woitaschek.slimber
 
 import timber.log.Timber
-import java.util.*
+import java.util.ArrayList
 
 /**
  * A tree that stores messages as log items

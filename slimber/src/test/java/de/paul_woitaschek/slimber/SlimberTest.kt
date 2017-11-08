@@ -1,9 +1,9 @@
 package de.paul_woitaschek.slimber
 
+import com.google.common.truth.Truth.assertThat
 import d
 import e
 import i
-import org.assertj.core.api.Assertions.assertThat
 import org.junit.After
 import org.junit.Before
 import org.junit.Test
@@ -21,13 +21,16 @@ import wtf
  */
 class SlimberTest {
 
-  @Before @After fun setUpAndTearDown() {
+  @Before
+  @After
+  fun setUpAndTearDown() {
     // clear timber after each test
     Timber.uprootAll()
   }
 
   /** Tests that the log messages arrive */
-  @Test fun testLogs() {
+  @Test
+  fun testLogs() {
     val loggingTree = LoggingTree()
     Timber.plant(loggingTree)
 
@@ -61,7 +64,8 @@ class SlimberTest {
   }
 
   /** test that the blocks are not executed when there are no trees planted */
-  @Test fun testBlockNotExecuted() {
+  @Test
+  fun testBlockNotExecuted() {
     val logThrowable = RuntimeException()
 
     val throwAssertionError = { throw AssertionError() }
