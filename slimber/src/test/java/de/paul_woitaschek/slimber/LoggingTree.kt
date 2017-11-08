@@ -9,8 +9,10 @@ import java.util.*
  * @author Paul Woitaschek
  */
 class LoggingTree : Timber.DebugTree() {
+
   private val logItems = ArrayList<LogItem>()
-  override fun log(priority: Int, tag: String?, message: String?, t: Throwable?) {
+
+  override fun log(priority: Int, tag: String?, message: String, t: Throwable?) {
     val item = LogItem(priority, tag, message, t)
     logItems.add(item)
   }
