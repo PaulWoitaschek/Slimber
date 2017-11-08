@@ -10,4 +10,4 @@ dependencies:
     - mkdir "$ANDROID_HOME/licenses" || true
     - echo -e "\ne6b7c2ab7fa2298c15165e9583d0acf0b04a2232" > "$ANDROID_HOME/licenses/android-sdk-license"
     - echo -e "\n8933bad161af4178b1185d1a37fbf41ea5269c55" > "$ANDROID_HOME/licenses/android-sdk-license"
-    - echo y | android update sdk --no-ui --all --filter "build-tools-26.0.3"
+    - echo y | android update sdk --no-ui --all --filter "build-tools-26.0.3,android-26"

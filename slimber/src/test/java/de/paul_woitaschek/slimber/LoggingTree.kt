@@ -12,5 +12,5 @@ class LoggingTree : Timber.DebugTree() {
     logItems.add(item)
   }
 
-  fun logs() = ArrayList(logItems)
+  fun logs() = logItems.toList()
 }
