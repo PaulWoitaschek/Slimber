@@ -21,6 +21,11 @@ There are also functions that take a throwable as the first paramter, so you can
 e(throwable) { "there was a severe error" }
 ```
 
+Besides from that just use Timber for planting trees like you nomrmally do
+```kotlin
+Timber.plant(DebugTree())
+```
+
 # Installation
 Add this to your root `build.gradle`
 ```gradle
