@@ -21,7 +21,7 @@ There are also functions that take a throwable as the first paramter, so you can
 e(throwable) { "there was a severe error" }
 ```
 
-Besides from that just use Timber for planting trees like you nomrmally do
+Besides from that just use Timber for planting trees like you normally do
 ```kotlin
 Timber.plant(DebugTree())
 ```
