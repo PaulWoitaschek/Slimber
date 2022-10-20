@@ -1,16 +1,17 @@
-apply plugin: 'com.android.library'
-apply plugin: 'kotlin-android'
-//apply from: '../maven-push.gradle'
+plugins {
+    id 'com.android.library'
+    id 'org.jetbrains.kotlin.android'
+}
 
 android {
-    compileSdkVersion 33
-//    buildToolsVersion "26.0.3"
+    namespace 'de.paul_woitaschek.slimber'
+    compileSdk 33
 
     defaultConfig {
-        minSdkVersion 15
-        targetSdkVersion 33
+        minSdk 15
+        targetSdk 33
         versionCode 8
-        versionName "1.0.7"
+        versionName '1.0.7'
         consumerProguardFiles 'proguard-rules.pro'
     }
     buildTypes {
