@@ -1,18 +1,11 @@
 package de.paul_woitaschek.slimber
 
 import com.google.common.truth.Truth.assertThat
-import d
-import e
-import i
 import org.junit.After
 import org.junit.Before
 import org.junit.Test
 import timber.log.Timber
-import timber.log.Timber.tag
-import v
-import w
-import wtf
-
+import timber.log.Timber.Forest.tag
 
 class SlimberTest {
 
@@ -35,26 +28,26 @@ class SlimberTest {
     tag("d")
     d { "debug" }
 
-    tag("w")
+    tag("de.paul_woitaschek.slimber.w")
     w { "warn" }
 
     tag("e")
     e { "error" }
 
-    tag("v")
+    tag("de.paul_woitaschek.slimber.v")
     v { "verbose" }
 
-    tag("wtf")
+    tag("de.paul_woitaschek.slimber.wtf")
     wtf { "assert" }
 
     assertThat(loggingTree.logs())
       .containsExactly(
         LogItem.i("i", "info"),
         LogItem.d("d", "debug"),
-        LogItem.w("w", "warn"),
+        LogItem.w("de.paul_woitaschek.slimber.w", "warn"),
         LogItem.e("e", "error"),
-        LogItem.v("v", "verbose"),
-        LogItem.wtf("wtf", "assert")
+        LogItem.v("de.paul_woitaschek.slimber.v", "verbose"),
+        LogItem.wtf("de.paul_woitaschek.slimber.wtf", "assert")
       )
   }
 
