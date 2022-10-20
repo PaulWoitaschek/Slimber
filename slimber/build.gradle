@@ -6,7 +6,7 @@ plugins {
 android {
     def TARGET_SDK = 33
 
-    namespace 'com.w2sv.slimber'
+    namespace 'de.paul_woitaschek.slimber'
     compileSdk TARGET_SDK
 
     defaultConfig {
