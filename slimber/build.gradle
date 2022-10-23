@@ -30,20 +30,6 @@ android {
     }
 }
 
-afterEvaluate {
-    publishing {
-        publications {
-            release(MavenPublication) {
-                from components.release
-
-                groupId = 'de.paul_woitaschek.slimber'
-                artifactId = 'slimber'
-                version = android.defaultConfig.versionName
-            }
-        }
-    }
-}
-
 dependencies {
     api 'com.jakewharton.timber:timber:5.0.1'
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlinVersion"
