@@ -28,26 +28,26 @@ class SlimberTest {
     tag("d")
     d { "debug" }
 
-    tag("de.paul_woitaschek.slimber.w")
+    tag("w")
     w { "warn" }
 
     tag("e")
     e { "error" }
 
-    tag("de.paul_woitaschek.slimber.v")
+    tag("v")
     v { "verbose" }
 
-    tag("de.paul_woitaschek.slimber.wtf")
+    tag("wtf")
     wtf { "assert" }
 
     assertThat(loggingTree.logs())
       .containsExactly(
         LogItem.i("i", "info"),
         LogItem.d("d", "debug"),
-        LogItem.w("de.paul_woitaschek.slimber.w", "warn"),
+        LogItem.w("w", "warn"),
         LogItem.e("e", "error"),
-        LogItem.v("de.paul_woitaschek.slimber.v", "verbose"),
-        LogItem.wtf("de.paul_woitaschek.slimber.wtf", "assert")
+        LogItem.v("v", "verbose"),
+        LogItem.wtf("wtf", "assert")
       )
   }
 
