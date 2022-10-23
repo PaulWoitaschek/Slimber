@@ -14,8 +14,8 @@ android {
         minSdk 15
         targetSdk TARGET_SDK
 
-        versionCode 8
-        versionName '1.0.7'
+        versionCode 9
+        versionName '1.0.8'
 
         consumerProguardFiles 'proguard-rules.pro'
     }
@@ -27,20 +27,6 @@ android {
     }
     sourceSets {
         main.java.srcDirs += 'src/main/kotlin'
-    }
-}
-
-afterEvaluate {
-    publishing {
-        publications {
-            release(MavenPublication) {
-                from components.release
-
-                groupId = 'de.paul_woitaschek.slimber'
-                artifactId = 'slimber'
-                version = android.defaultConfig.versionName
-            }
-        }
     }
 }
 
