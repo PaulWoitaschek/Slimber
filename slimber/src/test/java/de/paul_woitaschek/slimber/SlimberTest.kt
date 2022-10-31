@@ -1,18 +1,11 @@
 package de.paul_woitaschek.slimber
 
 import com.google.common.truth.Truth.assertThat
-import d
-import e
-import i
 import org.junit.After
 import org.junit.Before
 import org.junit.Test
 import timber.log.Timber
-import timber.log.Timber.tag
-import v
-import w
-import wtf
-
+import timber.log.Timber.Forest.tag
 
 class SlimberTest {
 

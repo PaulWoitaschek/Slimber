@@ -1,16 +1,22 @@
-apply plugin: 'com.android.library'
-apply plugin: 'kotlin-android'
-apply from: '../maven-push.gradle'
+plugins {
+    id 'com.android.library'
+    id 'org.jetbrains.kotlin.android'
+    id 'maven-publish'
+}
 
 android {
-    compileSdkVersion 26
-    buildToolsVersion "26.0.3"
+    def TARGET_SDK = 33
+
+    namespace 'de.paul_woitaschek.slimber'
+    compileSdk TARGET_SDK
 
     defaultConfig {
-        minSdkVersion 15
-        targetSdkVersion 26
-        versionCode 8
-        versionName "1.0.7"
+        minSdk 15
+        targetSdk TARGET_SDK
+
+        versionCode 9
+        versionName '1.0.8'
+
         consumerProguardFiles 'proguard-rules.pro'
     }
     buildTypes {
@@ -25,9 +31,9 @@ android {
 }
 
 dependencies {
-    api 'com.jakewharton.timber:timber:4.6.0'
+    api 'com.jakewharton.timber:timber:5.0.1'
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlinVersion"
 
-    testImplementation "com.google.truth:truth:0.36"
-    testImplementation "junit:junit:4.12"
+    testImplementation 'com.google.truth:truth:0.36'
+    testImplementation 'junit:junit:4.13.2'
 }
