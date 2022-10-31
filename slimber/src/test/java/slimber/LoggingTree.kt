@@ -1,4 +1,4 @@
-package de.paul_woitaschek.slimber
+package slimber
 
 import timber.log.Timber
 import java.util.ArrayList
