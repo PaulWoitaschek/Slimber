@@ -1,4 +1,4 @@
-# Slimber - Android Logging with Kotlin
+# Slimber - Zero overhead Logging with Timber
 
 Timber is a great library that makes logging very easy. However traditional logging like
 
