@@ -14,8 +14,13 @@ android {
     }
   }
 
+  lint {
+    warningsAsErrors = true
+    checkAllWarnings = true
+  }
+
   defaultConfig {
-    minSdk = 15
+    minSdk = 16
   }
   buildTypes {
     release {
