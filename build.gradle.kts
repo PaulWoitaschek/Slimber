@@ -1,3 +1,3 @@
 tasks.wrapper.configure {
-    distributionType = Wrapper.DistributionType.ALL
+  distributionType = Wrapper.DistributionType.ALL
 }

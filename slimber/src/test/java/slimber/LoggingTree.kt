@@ -1,7 +1,6 @@
 package slimber
 
 import timber.log.Timber
-import java.util.ArrayList
 
 class LoggingTree : Timber.DebugTree() {
 
