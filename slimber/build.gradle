@@ -5,14 +5,11 @@ plugins {
 }
 
 android {
-    def TARGET_SDK = 33
-
     namespace 'de.paul_woitaschek.slimber'
-    compileSdk TARGET_SDK
+    compileSdk 33
 
     defaultConfig {
         minSdk 15
-        targetSdk TARGET_SDK
 
         versionCode 9
         versionName '1.0.8'
