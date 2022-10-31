@@ -4,18 +4,16 @@ Timber is a great library that makes logging very easy. However traditional logg
 
 ```kotlin
 if (BuildConfig.DEBUG) {
-    Log.d(TAG, expensiveToStringObject.toString())
+  Log.d(TAG, expensiveToStringObject.toString())
 }
 ```
 
-has one big advantage: The whole block will only be executed when you are in debug mode. If you pass
-anything to Timber, the String itself and the precalculations will be created. Even if you never
-planted a tree.
+has one big advantage: The whole block will only be executed when you are in debug mode. If you pass anything to Timber, the String itself
+and the precalculations will be created. Even if you never planted a tree.
 
 And this is where Slimber comes into play: It uses [Kotlin](https://kotlinlang.org/)s `inline`
-capabilities so we can archieve the **no-cost-effect** because the whole block is executed only when
-there are trees planted. And remember: In Kotlin you can specify the last function in an arugment of
-a function outside the parentheses.
+capabilities so we can archieve the **no-cost-effect** because the whole block is executed only when there are trees planted. And remember:
+In Kotlin you can specify the last function in an arugment of a function outside the parentheses.
 
 So you can do it like this:
 
@@ -37,21 +35,20 @@ Timber.plant(DebugTree())
 
 # Installation
 
-Add this to your root `build.gradle`
+Add this to your root `settings.gradle.kts`
 
-```gradle
-allprojects {
-    repositories {
-        ...
-        maven { url "https://jitpack.io" }
-    }
+```kotlin
+dependencyResolutionManagement {
+  repositories {
+    maven("https://jitpack.io")
+  }
 }
 ```
 
 And then this dependency to your project:
 
-```gradle
+```kotlin
 dependencies {
-    compile 'com.github.PaulWoitaschek:Slimber:x.y.z'
+  implementation("com.github.PaulWoitaschek:Slimber:x.y.z")
 }
 ```
