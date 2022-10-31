@@ -1,5 +1,5 @@
 [versions]
-slimber = "1.0"
+slimber = "2.0.0-rc1"
 
 [libraries]
 timber = "com.jakewharton.timber:timber:5.0.1"
