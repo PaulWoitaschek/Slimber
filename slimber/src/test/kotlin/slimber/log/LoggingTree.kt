@@ -1,4 +1,4 @@
-package slimber
+package slimber.log
 
 import timber.log.Timber
 

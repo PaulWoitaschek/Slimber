@@ -1,4 +1,4 @@
-package slimber
+package slimber.log
 
 import com.google.common.truth.Truth
 import org.junit.After
@@ -12,32 +12,32 @@ class SlimberTest {
   @After
   fun uproot() {
     // clear timber after each test
-    Timber.uprootAll()
+      Timber.uprootAll()
   }
 
   /** Tests that the log messages arrive */
   @Test
   fun logs() {
     val loggingTree = LoggingTree()
-    Timber.plant(loggingTree)
+      Timber.plant(loggingTree)
 
-    Timber.tag("i")
-    i { "info" }
+      Timber.tag("i")
+      i { "info" }
 
-    Timber.tag("d")
-    d { "debug" }
+      Timber.tag("d")
+      d { "debug" }
 
-    Timber.tag("w")
-    w { "warn" }
+      Timber.tag("w")
+      w { "warn" }
 
-    Timber.tag("e")
-    e { "error" }
+      Timber.tag("e")
+      e { "error" }
 
-    Timber.tag("v")
-    v { "verbose" }
+      Timber.tag("v")
+      v { "verbose" }
 
-    Timber.tag("wtf")
-    wtf { "assert" }
+      Timber.tag("wtf")
+      wtf { "assert" }
 
     Truth.assertThat(loggingTree.logs())
       .containsExactly(
@@ -57,22 +57,22 @@ class SlimberTest {
 
     val throwAssertionError = { throw AssertionError() }
 
-    i(throwAssertionError)
-    i(logThrowable, throwAssertionError)
+      i(throwAssertionError)
+      i(logThrowable, throwAssertionError)
 
-    d(throwAssertionError)
-    d(logThrowable, throwAssertionError)
+      d(throwAssertionError)
+      d(logThrowable, throwAssertionError)
 
-    w(throwAssertionError)
-    w(logThrowable, throwAssertionError)
+      w(throwAssertionError)
+      w(logThrowable, throwAssertionError)
 
-    e(throwAssertionError)
-    e(logThrowable, throwAssertionError)
+      e(throwAssertionError)
+      e(logThrowable, throwAssertionError)
 
-    v(throwAssertionError)
-    v(logThrowable, throwAssertionError)
+      v(throwAssertionError)
+      v(logThrowable, throwAssertionError)
 
-    wtf(throwAssertionError)
-    wtf(logThrowable, throwAssertionError)
+      wtf(throwAssertionError)
+      wtf(logThrowable, throwAssertionError)
   }
 }

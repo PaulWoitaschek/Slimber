@@ -5,7 +5,7 @@ plugins {
 }
 
 android {
-  namespace = "slimber"
+  namespace = "slimber.log"
   compileSdk = 33
 
   publishing {

@@ -7,7 +7,7 @@ The logging functions now have a package.
 To migrate, add the imports, i.e
 
 ```kotlin
-import slimber.*
+import slimber.log.*
 ```
 
 ## Build Modernizations
