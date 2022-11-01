@@ -32,8 +32,8 @@ android {
 publishing {
   publications {
     register<MavenPublication>("release") {
-      groupId = "de.paul-woitaschek"
-      artifactId = "slimber"
+      groupId = "slimber"
+      artifactId = "log"
       version = libs.versions.slimber.get()
       pom {
         developers {
