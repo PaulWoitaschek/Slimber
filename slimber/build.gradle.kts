@@ -5,7 +5,7 @@ plugins {
 }
 
 android {
-  namespace = "slimber"
+  namespace = "de.paul_woitaschek.slimber"
   compileSdk = 33
 
   publishing {
