@@ -7,5 +7,5 @@ truth = "com.google.truth:truth:1.1.3"
 junit = "junit:junit:4.13.2"
 
 [plugins]
-kotlin-android = { id = "org.jetbrains.kotlin.android", version = "1.7.20" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version = "1.7.21" }
 android-library = { id = "com.android.library", version = "7.3.1" }
