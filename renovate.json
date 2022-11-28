@@ -3,5 +3,17 @@
   "extends": [
     "config:base",
     ":disableDependencyDashboard"
-  ]
+  ],
+  "packageRules": [
+    {
+      "matchUpdateTypes": [
+        "major",
+        "minor",
+        "patch",
+        "pin",
+        "digest"
+      ],
+      "automerge": true
+    }
+  ]    
 }
